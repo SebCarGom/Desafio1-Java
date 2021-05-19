@@ -33,27 +33,31 @@ public class FPDual {
 		Developer dev4 = new Developer("Antonio", 17);
 
 		// Se muestra el numero total de empleados.
-		System.out.println("Número total de trabajadores: " + dev1.getNumEmployees());
-		System.out.println("Número total de trabajadores: " + dev4.getNumEmployees() + "\n");
+		System.out.println("Número total de trabajadores: ".concat(Integer.toString(dev1.getNumEmployees())));
+		System.out.println("Número total de trabajadores: ".concat(Integer.toString(dev4.getNumEmployees())));
 
 		// Se muestra el numero de empleado asignado a cada programador.
-		System.out.println("El número de empleado de " + dev1.getName() + " es: " + dev1.getIdEmployee());
-		System.out.println("El número de empleado de " + dev2.getName() + " es: " + dev2.getIdEmployee());
-		System.out.println("El número de empleado de " + dev3.getName() + " es: " + dev3.getIdEmployee());
-		System.out.println("El número de empleado de " + dev4.getName() + " es: " + dev4.getIdEmployee() + "\n");
+		System.out.println("\nEl número de empleado de ".concat(dev1.getName()).concat(" es: ")
+				.concat(Integer.toString(dev1.getIdEmployee())));
+		System.out.println("El número de empleado de ".concat(dev2.getName()).concat(" es: ")
+				.concat(Integer.toString(dev2.getIdEmployee())));
+		System.out.println("El número de empleado de ".concat(dev3.getName()).concat(" es: ")
+				.concat(Integer.toString(dev3.getIdEmployee())));
+		System.out.println("El número de empleado de ".concat(dev4.getName()).concat(" es: ")
+				.concat(Integer.toString(dev4.getIdEmployee())));
 
 		// Se descuentan 2 dias de vacaciones al segundo empleado.
 		dev2.reduceHolidays(2);
 
 		// Se consultan los dias de vacaciones que tiene asignado cada empleado.
-		System.out.println("El número de días de vacaciones disfrutables de " + dev1.getName() + " son de: "
-				+ dev1.getHolidays() + " días");
-		System.out.println("El número de días de vacaciones disfrutables de " + dev2.getName() + " son de: "
-				+ dev2.getHolidays() + " días");
-		System.out.println("El número de días de vacaciones disfrutables de " + dev3.getName() + " son de: "
-				+ dev3.getHolidays() + " días");
-		System.out.println("El número de días de vacaciones disfrutables de " + dev4.getName() + " son de: "
-				+ dev4.getHolidays() + " días");
+		System.out.println("\nEl número de días de vacaciones disfrutables de ".concat(dev1.getName())
+				.concat(" son de: ").concat(Integer.toString(dev1.getHolidays())).concat(" días"));
+		System.out.println("El número de días de vacaciones disfrutables de ".concat(dev2.getName()).concat(" son de: ")
+				.concat(Integer.toString(dev2.getHolidays())).concat(" días"));
+		System.out.println("El número de días de vacaciones disfrutables de ".concat(dev3.getName()).concat(" son de: ")
+				.concat(Integer.toString(dev3.getHolidays())).concat(" días"));
+		System.out.println("El número de días de vacaciones disfrutables de ".concat(dev4.getName()).concat(" son de: ")
+				.concat(Integer.toString(dev4.getHolidays())).concat(" días"));
 
 	}
 
